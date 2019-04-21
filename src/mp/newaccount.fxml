@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="412.0" prefWidth="764.0" style="-fx-background-color: #23004A;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mp.Controller">
+   <children>
+      <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="214.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../MP/src/images/icons8-user-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="214.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../MP/src/images/icons8-key-50.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="142.0" layoutY="58.0" prefHeight="297.0" prefWidth="467.0">
+         <children>
+            <JFXTextField fx:id="signupname" prefHeight="47.0" prefWidth="467.0" promptText="Enter you name" style="-fx-text-fill: white;" />
+            <JFXTextField fx:id="newusername" prefHeight="47.0" prefWidth="467.0" promptText="Enter your username" style="-fx-text-fill: white;" />
+            <JFXTextField fx:id="department" prefHeight="47.0" prefWidth="467.0" promptText="Enter you department" style="-fx-text-fill: white;" />
+            <JFXTextField fx:id="rno" prefHeight="47.0" prefWidth="467.0" promptText="Enter your roll no" style="-fx-text-fill: white;" />
+            <JFXTextField fx:id="newpassword" prefHeight="47.0" prefWidth="467.0" promptText="Enter password" style="-fx-text-fill: white;" />
+            <JFXTextField fx:id="newconfirmpassword" prefHeight="47.0" prefWidth="467.0" promptText="Confirm your password" style="-fx-text-fill: white;" />
+         </children>
+      </VBox>
+      <JFXButton layoutX="345.0" layoutY="360.0" onAction="#signup" style="-fx-background-color: #3D004A;" text="Sign Up" textFill="#f7f7fc" />
+      <JFXButton layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#gotologin" style="-fx-background-color: #3D004A;" text="Back to Login" textFill="WHITE" />
+   </children>
+</AnchorPane>

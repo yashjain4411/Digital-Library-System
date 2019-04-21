@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="755.0" style="-fx-background-color: #23004A;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mp.dashboardcontroller">
+   <children>
+      <JFXButton layoutX="677.0" layoutY="22.0" onAction="#logout" style="-fx-background-color: #3D004A;" text="logout" textFill="#f5f2f2" />
+      <VBox layoutY="-1.0" prefHeight="413.0" prefWidth="100.0">
+         <children>
+            <JFXButton onAction="#searchbooks" prefHeight="100.0" prefWidth="99.0" style="-fx-background-color: #160B88;" text="SEARCH" textFill="#fffdfd" />
+            <JFXButton onAction="#suggestbooks" prefHeight="109.0" prefWidth="99.0" style="-fx-background-color: #3D004A;" text="SUGGESTIONS" textFill="#fffdfd" />
+            <JFXButton onAction="#showdigitalresources" prefHeight="114.0" prefWidth="99.0" style="-fx-background-color: #160B88;" text="DIGITAL" textFill="#fffdfd" />
+            <JFXButton onAction="#viewbooks" prefHeight="97.0" prefWidth="100.0" style="-fx-background-color: #3D004A;" text="VIEW" textFill="#f8f6f6">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="136.0" layoutY="63.0" prefHeight="321.0" prefWidth="548.0">
+         <children>
+            <VBox layoutY="38.0" prefHeight="283.0" prefWidth="552.0">
+               <children>
+                  <HBox prefHeight="43.0" prefWidth="552.0">
+                     <children>
+                        <Label prefHeight="43.0" prefWidth="50.0" text="NAME:" textFill="#fffdfd">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="15.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXTextField fx:id="name" alignment="BOTTOM_LEFT" editable="false" prefHeight="41.0" prefWidth="503.0" style="-fx-text-fill: white;" unFocusColor="#fffefa" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="43.0" prefWidth="552.0">
+                     <children>
+                        <Label prefHeight="28.0" prefWidth="40.0" text="R.no:" textFill="#fffdfd">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="15.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXTextField fx:id="rno" alignment="BOTTOM_LEFT" editable="false" prefHeight="41.0" prefWidth="503.0" style="-fx-text-fill: white;" unFocusColor="#f5f4f4" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="43.0" prefWidth="552.0">
+                     <children>
+                        <Label prefHeight="43.0" prefWidth="68.0" text="FINE:" textFill="#fffdfd">
+                           <HBox.margin>
+                              <Insets top="15.0" />
+                           </HBox.margin>
+                        </Label>
+                        <JFXTextField fx:id="fine" alignment="BOTTOM_LEFT" editable="false" prefHeight="41.0" prefWidth="503.0" style="-fx-text-fill: white;" unFocusColor="#f5f3f3" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

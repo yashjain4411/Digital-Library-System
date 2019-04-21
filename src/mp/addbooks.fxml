@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="317.0" prefWidth="529.0" style="-fx-background-color: #23004A;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mp.Controller">
+   <children>
+      <VBox layoutX="53.0" layoutY="80.0" prefHeight="166.0" prefWidth="423.0" spacing="8.0">
+         <children>
+            <JFXTextField fx:id="addbookid" focusColor="#f4f808" promptText="Enter book id" style="-fx-text-fill: white;" />
+            <JFXTextField fx:id="addbookname" focusColor="#f4f808" promptText="Enter book name" style="-fx-text-fill: white;" />
+            <JFXTextField fx:id="addbookauthor" focusColor="#f4f808" promptText="Enter author" style="-fx-text-fill: white;" />
+            <JFXTextField fx:id="addbookpub" focusColor="#f4f808" promptText="Enter publication" style="-fx-text-fill: white;" />
+            <JFXTextField fx:id="addbookedition" focusColor="#f4f808" promptText="Enter edition" style="-fx-text-fill: white;" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <JFXButton layoutX="240.0" layoutY="268.0" onAction="#addbook" style="-fx-background-color: #3D004A;" text="add" textFill="#f5f2f2" />
+      <ImageView fitHeight="63.0" fitWidth="109.0" layoutX="233.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/icons8-literature-filled-50%20(2).png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="463.0" layoutY="14.0" onAction="#cancel" style="-fx-background-color: #3D004A;" text="Cancel" textFill="#fcf7f7" />
+   </children>
+</AnchorPane>
