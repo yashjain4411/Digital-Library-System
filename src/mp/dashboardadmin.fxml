@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="413.0" prefWidth="755.0" style="-fx-background-color: #23004A;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mp.admindashboardcontroller">
+   <children>
+      <JFXButton layoutX="677.0" layoutY="22.0" onAction="#logout" style="-fx-background-color: #3D004A;" text="logout" textFill="#f5f2f2" />
+      <VBox layoutY="-1.0" prefHeight="413.0" prefWidth="100.0" />
+      <VBox layoutX="112.0" layoutY="29.0" prefHeight="370.0" prefWidth="503.0" spacing="12.0">
+         <children>
+            <HBox prefHeight="76.0" prefWidth="503.0" spacing="12.0">
+               <children>
+                  <JFXButton onAction="#searchbooks" prefHeight="100.0" prefWidth="247.0" style="-fx-background-color: #160B88;" text="SEARCH" textFill="#fffdfd" />
+                  <JFXButton onAction="#viewsuggestions" prefHeight="100.0" prefWidth="264.0" style="-fx-background-color: #3D004A;" text="SUGGESTIONS" textFill="#fffdfd" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="12.0">
+               <children>
+                  <JFXButton onAction="#adddigitalresource" prefHeight="100.0" prefWidth="241.0" style="-fx-background-color: #3D004A;" text="ADD DIGITAL RESOURCE" textFill="#fffdfd" />
+                  <JFXButton onAction="#viewalldigital" prefHeight="100.0" prefWidth="263.0" style="-fx-background-color: #160B88;" text="VIEW ALL DIGITAL RESOURCE" textFill="#fffdfd" />
+               </children>
+            </HBox>
+            <HBox prefHeight="89.0" prefWidth="503.0" spacing="12.0">
+               <children>
+                  <JFXButton onAction="#viewallbooks" prefHeight="100.0" prefWidth="246.0" style="-fx-background-color: #160B88;" text="VIEW ALL BOOKS" textFill="#fffdfd" />
+                  <JFXButton onAction="#viewmembers" prefHeight="100.0" prefWidth="266.0" style="-fx-background-color: #3D004A;" text="VIEW MEMBERS" textFill="#fffdfd" />
+               </children>
+            </HBox>
+            <HBox prefHeight="82.0" prefWidth="503.0" spacing="12.0">
+               <children>
+                  <JFXButton onAction="#addbooks" prefHeight="79.0" prefWidth="239.0" style="-fx-background-color: #3D004A;" text="ADD BOOK" textFill="#fffdfd" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
